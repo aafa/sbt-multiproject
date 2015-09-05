@@ -1,0 +1,229 @@
+MacBook-Pro-Aleksej:sbt-multiproject aafa$ sbt
+[info] Loading project definition from /Users/aafa/Projects/github/sbt-multiproject/project
+[info] Set current project to root (in build file:/Users/aafa/Projects/github/sbt-multiproject/)
+> p[warn] UPDATE: A newer android-sdk-plugin is available: 1.4.12, currently running: 1.4.11
+roject app
+[info] Set current project to app (in build file:/Users/aafa/Projects/github/sbt-multiproject/)
+> clean
+[success] Total time: 0 s, completed 05.09.2015 14:02:05
+> run
+[info] Updating {file:/Users/aafa/Projects/github/sbt-multiproject/}core...
+[info] Resolving jline#jline;2.12.1 ...
+[info] Done updating.
+[info] Updating {file:/Users/aafa/Projects/github/sbt-multiproject/}app...
+[info] Unpacking aar: multidex-1.0.1.aar to com.android.support-multidex-1.0.1
+[info] Resolving jline#jline;2.12.1 ...
+[info] Done updating.
+[warn] com.android.support:multidex:1.0.1 is not an explicit dependency, skipping
+[info] Collecting resources
+[info] Collecting resources
+[info] Performing full resource merge
+[info] Performing full resource merge
+[info] Processing resources
+[info] Compiling 3 Scala sources and 1 Java source to /Users/aafa/Projects/github/sbt-multiproject/core/target/android-bin/classes...
+[info] Processing resources
+[info] Packaging /Users/aafa/Projects/github/sbt-multiproject/core/target/android-bin/classes.jar ...
+[info] Done packaging.
+[info] Compiling 1 Scala source and 2 Java sources to /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/classes...
+[info] Packaging resources: resources-debug.ap_
+[info] Packaging /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/classes.jar ...
+[info] Done packaging.
+[info] Finding dependency references for: core:core:0.1-SNAPSHOT
+[info] Finding dependency references for: com.android.support-multidex-1.0.1.jar
+[info] Finding dependency references for: org.scaloid:scaloid_2.11:3.6.1-10
+[info] Finding dependency references for: classes.jar
+ProGuard, version 5.0
+ProGuard is released under the GNU General Public License. You therefore
+must ensure that programs that link to it (android, ...)
+carry the GNU General Public License as well. Alternatively, you can
+apply for an exception with the author of ProGuard.
+Reading input...
+Reading program jar [/Users/aafa/Projects/github/sbt-multiproject/core/target/android-bin/classes.jar] (filtered)
+Reading program jar [/Users/aafa/Projects/github/sbt-multiproject/core/target/aars/com.android.support-multidex-1.0.1/com.android.support-multidex-1.0.1.jar] (filtered)
+Reading program jar [/Users/aafa/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar] (filtered)
+Reading program jar [/Users/aafa/.ivy2/cache/org.scaloid/scaloid_2.11/jars/scaloid_2.11-3.6.1-10.jar] (filtered)
+Reading program jar [/Users/aafa/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.4.jar] (filtered)
+Reading program jar [/Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/classes.jar] (filtered)
+Reading library jar [/usr/local/var/lib/android-sdk/platforms/android-21/android.jar]
+Initializing...
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$SActivity$_setter_$ctx_$eq(org.scaloid.common.SActivity); }', but not the descriptor class 'org.scaloid.common.SActivity'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$SActivity$_setter_$onStartStop_$eq(org.scaloid.common.Registerable); }', but not the descriptor class 'org.scaloid.common.Registerable'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$SActivity$_setter_$onCreateDestroy_$eq(org.scaloid.common.Registerable); }', but not the descriptor class 'org.scaloid.common.Registerable'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$SActivity$_setter_$onStartBodies_$eq(scala.collection.mutable.ArrayBuffer); }', but not the descriptor class 'scala.collection.mutable.ArrayBuffer'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$SActivity$_setter_$onResumeBodies_$eq(scala.collection.mutable.ArrayBuffer); }', but not the descriptor class 'scala.collection.mutable.ArrayBuffer'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$SActivity$_setter_$onPauseBodies_$eq(scala.collection.mutable.ArrayBuffer); }', but not the descriptor class 'scala.collection.mutable.ArrayBuffer'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$SActivity$_setter_$onStopBodies_$eq(scala.collection.mutable.ArrayBuffer); }', but not the descriptor class 'scala.collection.mutable.ArrayBuffer'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onRegister(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onUnregister(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onStart(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onResume(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onPause(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onStop(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$Creatable$_setter_$onCreateBodies_$eq(scala.collection.mutable.ArrayBuffer); }', but not the descriptor class 'scala.collection.mutable.ArrayBuffer'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onCreate(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$Destroyable$_setter_$onDestroyBodies_$eq(scala.collection.mutable.ArrayBuffer); }', but not the descriptor class 'scala.collection.mutable.ArrayBuffer'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.Function0 onDestroy(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { scala.runtime.Nothing$ contentView(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void runOnUiThread(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity { void org$scaloid$common$TagUtil$_setter_$loggerTag_$eq(org.scaloid.common.LoggerTag); }', but not the descriptor class 'org.scaloid.common.LoggerTag'
+Note: the configuration keeps the entry point 'com.test.core.activity.CoreMainActivity$$anon$1$$anonfun$1 { org.scaloid.common.SLinearLayout$LayoutParams apply(org.scaloid.common.STextView); }', but not the descriptor class 'org.scaloid.common.STextView'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { org.scaloid.common.SLinearLayout apply(android.content.Context,scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ gravity(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ horizontalGravity(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ verticalGravity(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { void org$scaloid$common$TraitViewGroup$_setter_$parentVG_$eq(org.scaloid.common.TraitViewGroup); }', but not the descriptor class 'org.scaloid.common.TraitViewGroup'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { void org$scaloid$common$TraitViewGroup$_setter_$styles_$eq(scala.collection.mutable.ArrayBuffer); }', but not the descriptor class 'scala.collection.mutable.ArrayBuffer'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup style(scala.PartialFunction); }', but not the descriptor class 'scala.PartialFunction'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ clipChildren(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ clipToPadding(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ onHierarchyChangeListener(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onAnimationEnd(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onAnimationEnd(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onAnimationRepeat(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onAnimationRepeat(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onAnimationStart(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onAnimationStart(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onChildViewAdded(scala.Function2); }', but not the descriptor class 'scala.Function2'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onChildViewAdded(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onChildViewRemoved(scala.Function2); }', but not the descriptor class 'scala.Function2'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.ViewGroup onChildViewRemoved(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { void org$scaloid$common$TraitView$_setter_$parentViewGroup_$eq(org.scaloid.common.TraitViewGroup); }', but not the descriptor class 'org.scaloid.common.TraitViewGroup'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View fill(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View wrap(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View wf(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View fw(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { org.scaloid.common.ViewGroupLayoutParams $less$less(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { org.scaloid.common.TraitViewGroup parentViewGroupIfExists(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { org.scaloid.common.ViewGroupLayoutParams $less$less(int,int,scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ backgroundColor(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ backgroundDrawable(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ backgroundResource(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ fadingEdgeLength(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ minimumHeight(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ minimumWidth(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ onClickListener(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ onCreateContextMenuListener(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ onKeyListener(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ onLongClickListener(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ onTouchListener(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { scala.runtime.Nothing$ scrollContainer(org.scaloid.common.package$NoGetterForThisProperty); }', but not the descriptor class 'org.scaloid.common.package$NoGetterForThisProperty'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onClick(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onClick(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onCreateContextMenu(scala.Function3); }', but not the descriptor class 'scala.Function3'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onCreateContextMenu(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onFocusChange(scala.Function2); }', but not the descriptor class 'scala.Function2'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onFocusChange(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onKey(scala.Function3); }', but not the descriptor class 'scala.Function3'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onKey(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onLongClick(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onLongClick(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onTouch(scala.Function2); }', but not the descriptor class 'scala.Function2'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onTouch(scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { android.view.View onPressAndHold(int,scala.Function0); }', but not the descriptor class 'scala.Function0'
+Note: the configuration keeps the entry point 'org.scaloid.common.SLinearLayout { SLinearLayout(android.content.Context,org.scaloid.common.TraitViewGroup); }', but not the descriptor class 'org.scaloid.common.TraitViewGroup'
+Note: the configuration keeps the entry point 'org.scaloid.common.SVerticalLayout { org.scaloid.common.SVerticalLayout apply(android.content.Context,scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'org.scaloid.common.SVerticalLayout { SVerticalLayout(android.content.Context,org.scaloid.common.TraitViewGroup); }', but not the descriptor class 'org.scaloid.common.TraitViewGroup'
+Note: the configuration keeps the entry point 'scala.runtime.AbstractFunction1 { scala.Function1 compose(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: the configuration keeps the entry point 'scala.runtime.AbstractFunction1 { scala.Function1 andThen(scala.Function1); }', but not the descriptor class 'scala.Function1'
+Note: there were 79 unkept descriptor classes in kept class members.
+      You should consider explicitly keeping the mentioned classes
+      (using '-keep').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#descriptorclass)
+Note: you're ignoring all warnings!
+Ignoring unused library classes...
+  Original number of library classes: 3673
+  Final number of library classes:    880
+Shrinking...
+Removing unused program classes and class elements...
+  Original number of program classes: 7357
+  Final number of program classes:    685
+Writing output...
+Preparing output jar [/Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/classes.proguard.jar]
+  Copying resources from program jar [/Users/aafa/Projects/github/sbt-multiproject/core/target/android-bin/classes.jar] (filtered)
+  Copying resources from program jar [/Users/aafa/Projects/github/sbt-multiproject/core/target/aars/com.android.support-multidex-1.0.1/com.android.support-multidex-1.0.1.jar] (filtered)
+  Copying resources from program jar [/Users/aafa/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar] (filtered)
+  Copying resources from program jar [/Users/aafa/.ivy2/cache/org.scaloid/scaloid_2.11/jars/scaloid_2.11-3.6.1-10.jar] (filtered)
+  Copying resources from program jar [/Users/aafa/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.4.jar] (filtered)
+  Copying resources from program jar [/Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/classes.jar] (filtered)
+[info] Creating proguard cache: proguard-cache-e38dbd36745bb5216c3f3c65cf7a4cc44bead4fd.jar
+[info] Generating dex, incremental=false, multidex=true
+[info] dex method count: 5934
+[info] Packaged: app-debug-unaligned.apk (217,00KB)
+[info] Debug package does not need signing: app-debug-unaligned.apk
+[info] zipaligned: app-debug.apk
+[info] Installing to Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
+[info] [app-debug.apk] Install finished: 217,00KB in 1,14s. 190,02KB/s
+[info] Running on Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
+[info] Starting: Intent { cmp=com.aptekarsk.app/com.test.app.activity.MainActivity }
+[success] Total time: 20 s, completed 05.09.2015 14:02:26
+> run
+[warn] com.android.support:multidex:1.0.1 is not an explicit dependency, skipping
+[info] Processing resources
+[info] Processing resources
+[info] Packaging resources: resources-debug.ap_
+[info] [debug] cache hit, skipping proguard!
+[info] Pre-dexing: classes.jar
+[info] Pre-dexing: com.android.support-multidex-1.0.1.jar
+[info] Pre-dexing: scaloid_2.11-3.6.1-10.jar
+[info] Pre-dexing: proguard-cache-e38dbd36745bb5216c3f3c65cf7a4cc44bead4fd.jar
+[info] Generating dex, incremental=false, multidex=true
+[info] dex method count: 8
+[info] Packaged: app-debug-unaligned.apk (917,59KB)
+[info] Debug package does not need signing: app-debug-unaligned.apk
+[info] zipaligned: app-debug.apk
+[info] Installing to Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
+[info] [app-debug.apk] Install finished: 917,59KB in 2,29s. 401,57KB/s
+[info] Running on Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
+[info] Starting: Intent { cmp=com.aptekarsk.app/com.test.app.activity.MainActivity }
+[success] Total time: 15 s, completed 05.09.2015 14:02:49
+> run
+[warn] com.android.support:multidex:1.0.1 is not an explicit dependency, skipping
+[info] Processing resources
+[info] Processing resources
+[info] Compiling 1 Scala source to /Users/aafa/Projects/github/sbt-multiproject/core/target/android-bin/classes...
+[info] Packaging /Users/aafa/Projects/github/sbt-multiproject/core/target/android-bin/classes.jar ...
+[info] Done packaging.
+[info] Finding dependency references for: core:core:0.1-SNAPSHOT
+[info] [debug] cache hit, skipping proguard!
+[info] Pre-dexing: classes.jar
+сен 05, 2015 2:02:57 PM com.android.builder.internal.compiler.PreDexCache checkSame
+INFO: /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex l:16188 ts:1441447355000
+[trace] Stack trace suppressed: run last app/android:predex for the full output.
+[error] (app/android:predex) java.lang.IllegalArgumentException: Source /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex and destination /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex must be different
+[error] Total time: 2 s, completed 05.09.2015 14:02:57
+> last app/android:predex
+[info] Pre-dexing: classes.jar
+java.lang.IllegalArgumentException: Source /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex and destination /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex must be different
+        at com.google.common.base.Preconditions.checkArgument(Preconditions.java:148)
+        at com.google.common.io.Files.copy(Files.java:440)
+        at com.android.builder.internal.compiler.PreDexCache.preDexLibrary(PreDexCache.java:157)
+        at com.android.builder.core.AndroidBuilder.preDexLibrary(AndroidBuilder.java:1330)
+        at android.Dex$$anonfun$predex$2.apply(proguard.scala:311)
+        at android.Dex$$anonfun$predex$2.apply(proguard.scala:305)
+        at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+        at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
+        at scala.collection.immutable.List.foreach(List.scala:318)
+        at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
+        at scala.collection.AbstractTraversable.map(Traversable.scala:105)
+        at android.Dex$.predex(proguard.scala:305)
+        at android.Tasks$$anonfun$71.apply(tasks.scala:988)
+        at android.Tasks$$anonfun$71.apply(tasks.scala:978)
+        at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+        at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+        at sbt.std.Transform$$anon$4.work(System.scala:63)
+        at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+        at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+        at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+        at sbt.Execute.work(Execute.scala:235)
+        at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+        at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+        at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+        at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+        at java.lang.Thread.run(Thread.java:745)
+[error] (app/android:predex) java.lang.IllegalArgumentException: Source /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex and destination /Users/aafa/Projects/github/sbt-multiproject/apps/app/target/android-bin/predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex must be different
+>
