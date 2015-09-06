@@ -9,3 +9,6 @@ android/support/multidex/MultiDexExtractor.class
 android/support/multidex/ZipUtil$CentralDirectory.class
 android/support/multidex/ZipUtil.class
 com/android/test/runner/MultiDexTestRunner.class
+com/test/core/AppContext.class
+com/test/core/AppContext$.class
+com/hanhuy/android/protify/agent/Protify.class
