@@ -15,7 +15,7 @@ object Dependencies {
 
     resolvers ++= resolverUrls,
 
-    libraryDependencies += "com.android.support" % "multidex" % "1.0.1",
+    libraryDependencies += aar("com.android.support" % "multidex" % "1.0.1"),
     libraryDependencies += "org.scaloid" %% "scaloid" % "3.6.1-10"
   )
 
