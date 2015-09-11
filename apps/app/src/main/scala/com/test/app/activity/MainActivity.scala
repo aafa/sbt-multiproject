@@ -1,6 +1,5 @@
 package com.test.app.activity
 
-import android.os.Bundle
 import com.test.core.activity.CoreMainActivity
 
 /**
@@ -10,10 +9,6 @@ import com.test.core.activity.CoreMainActivity
 
 class MainActivity extends CoreMainActivity {
 
-  protected override def onCreate(b: Bundle): Unit = {
-    super.onCreate(b)
-
-  }
 
 }
 
