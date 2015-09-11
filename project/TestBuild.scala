@@ -23,8 +23,8 @@ object TestBuild extends Build {
     run <<= run in Android,
     install <<= install in Android,
 
-//    dexMulti in Android := true,
-//    dexMainFileClasses in Android := Settings.dexFiles,
+    dexMulti in Android := true,
+    dexMainFileClasses in Android := Settings.dexFiles,
 
     useProguard in Android := proguard,
     proguardScala in Android := proguard,
