@@ -14,7 +14,7 @@ class CoreMainActivity extends SActivity {
     super.onCreate(b)
 
     contentView = new SVerticalLayout {
-      STextView("change me!!!")
+      STextView("change me!")
     }.padding(20)
   }
 
