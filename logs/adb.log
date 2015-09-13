@@ -1,0 +1,44 @@
+09-13 23:10:05.838    1091-1108/system_process I/ActivityManager﹕ Start proc com.sbtmult.app for activity com.sbtmult.app/.activity.MainActivity: pid=11568 uid=10152 gids={50152, 9997, 1028, 1015, 3003} abi=armeabi-v7a
+09-13 23:10:05.868  11568-11568/? I/art﹕ Late-enabling -Xcheck:jni
+09-13 23:10:05.898    1091-1091/system_process V/ActivityManager﹕ Display changed displayId=0
+09-13 23:10:05.938  11568-11568/com.sbtmult.app W/ResourcesManager﹕ Asset path '/system/framework/android.test.runner.jar' does not exist or contains no resources.
+09-13 23:10:05.958  11568-11568/com.sbtmult.app D/AndroidRuntime﹕ Shutting down VM
+09-13 23:10:05.958  11568-11568/com.sbtmult.app E/AndroidRuntime﹕ FATAL EXCEPTION: main
+    Process: com.sbtmult.app, PID: 11568
+    java.lang.RuntimeException: Unable to instantiate application com.sbtmult.core.AppContext: java.lang.ClassNotFoundException: Didn't find class "com.sbtmult.core.AppContext" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/data/app/com.sbtmult.app-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+            at android.app.LoadedApk.makeApplication(LoadedApk.java:563)
+            at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4491)
+            at android.app.ActivityThread.access$1500(ActivityThread.java:144)
+            at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1339)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:135)
+            at android.app.ActivityThread.main(ActivityThread.java:5221)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:372)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:898)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)
+     Caused by: java.lang.ClassNotFoundException: Didn't find class "com.sbtmult.core.AppContext" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/data/app/com.sbtmult.app-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+            at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+            at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+            at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+            at android.app.Instrumentation.newApplication(Instrumentation.java:979)
+            at android.app.LoadedApk.makeApplication(LoadedApk.java:558)
+            at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4491)
+            at android.app.ActivityThread.access$1500(ActivityThread.java:144)
+            at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1339)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:135)
+            at android.app.ActivityThread.main(ActivityThread.java:5221)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:372)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:898)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)
+    Suppressed: java.lang.ClassNotFoundException: com.sbtmult.core.AppContext
+            at java.lang.Class.classForName(Native Method)
+            at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+            at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+            at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+            ... 13 more
+     Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack available
+09-13 23:10:05.958    1091-1107/system_process W/ActivityManager﹕ Force finishing activity com.sbtmult.app/.activity.MainActivity
+
