@@ -1,6 +1,6 @@
-package com.test.app.activity
+package com.sbtmult.app.activity
 
-import com.test.core.activity.CoreMainActivity
+import com.sbtmult.core.activity.CoreMainActivity
 
 /**
  * Copyright (c) 2014 Aptekarsk LLC. All rights reserved.

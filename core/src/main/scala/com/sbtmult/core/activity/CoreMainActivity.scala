@@ -1,4 +1,4 @@
-package com.test.core.activity
+package com.sbtmult.core.activity
 
 import android.os.Bundle
 import org.scaloid.common._
@@ -14,7 +14,7 @@ class CoreMainActivity extends SActivity {
     super.onCreate(b)
 
     contentView = new SVerticalLayout {
-      STextView("change me!")
+      STextView("change me!!")
     }.padding(20)
   }
 

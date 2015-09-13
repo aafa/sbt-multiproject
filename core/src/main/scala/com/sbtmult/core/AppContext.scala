@@ -1,4 +1,4 @@
-package com.test.core
+package com.sbtmult.core
 
 import android.content.Context
 import android.support.multidex.MultiDexApplication
