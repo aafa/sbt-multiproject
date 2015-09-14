@@ -1,17 +1,13 @@
-> devices
-[info]  Serial                 Model            Battery % Android Version
-[info]  ---------------------- ---------------- --------- ---------------
-[info]  87613303                MI 4W                  73% 5.0.2  API 21
 > clean
-[success] Total time: 0 s, completed 14.09.2015 0:08:06
+[success] Total time: 0 s, completed 14.09.2015 13:53:45
 > run
 [info] Updating {file:/Users/aafa/Projects/github/sbt-multiproject/}app...
 [info] Resolving com.hanhuy.android#protify;0.6 ...
 [info] Done updating.
 [warn] com.android.support:multidex:1.0.1 is not an explicit dependency, skipping
+[info] Processing resources
 [info] Collecting resources
 [info] Performing full resource merge
-[info] Processing resources
 [warn] /Users/aafa/Projects/github/sbt-multiproject/core/target/aars/com.android.support-appcompat-v7-21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_light.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
 [warn] /Users/aafa/Projects/github/sbt-multiproject/core/target/aars/com.android.support-appcompat-v7-21.0.3/res/drawable-hdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
 [warn] /Users/aafa/Projects/github/sbt-multiproject/core/target/aars/com.android.support-appcompat-v7-21.0.3/res/drawable-xhdpi/abc_ab_share_pack_holo_dark.9.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
@@ -75,11 +71,11 @@ Preparing output jar [/Users/aafa/Projects/github/sbt-multiproject/apps/app/targ
 [info] Packaged: app-debug-unaligned.apk (1,16MB)
 [info] Debug package does not need signing: app-debug-unaligned.apk
 [info] zipaligned: app-debug.apk
-[info] Installing to MI 4W (87613303)...
-[info] [app-debug.apk] Install finished: 1,16MB in 5,57s. 213,72KB/s
-[info] Running on MI 4W (87613303)...
+[info] Installing to Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
+[info] [app-debug.apk] Install finished: 1,16MB in 1,19s. 1001,03KB/s
+[info] Running on Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
 [info] Starting: Intent { cmp=com.sbtmult.app/.activity.MainActivity }
-[success] Total time: 21 s, completed 14.09.2015 0:08:28
+[success] Total time: 14 s, completed 14.09.2015 13:54:01
 > run
 [info] Maintaining resource ID consistency
 [warn] com.android.support:multidex:1.0.1 is not an explicit dependency, skipping
@@ -107,12 +103,16 @@ Warning: can't write resource [META-INF/MANIFEST.MF] (Duplicate zip entry [class
 [info] Pre-dexing: proguard-cache-ae705ec02e117f8dff6f2c5f51fcbb01985a3f45.jar
 [info] Generating dex, incremental=false, multidex=true
 [info] dex method count: 229
-[info] Packaged: app-debug-unaligned.apk (1,17MB)
+[info] Packaged: app-debug-unaligned.apk (1,00MB)
 [info] Debug package does not need signing: app-debug-unaligned.apk
 [info] zipaligned: app-debug.apk
-[info] Installing to MI 4W (87613303)...
-[info] [app-debug.apk] Install finished: 1,17MB in 3,99s. 301,25KB/s
-[info] Running on MI 4W (87613303)...
+[info] Installing to Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
+[info] [app-debug.apk] Install finished: 1,00MB in 2,40s. 427,65KB/s
+[info] Running on Google Nexus 4 - 5.0.0 - API 21 - 768x1280 (192.168.56.101:5555)...
 [info] Starting: Intent { cmp=com.sbtmult.app/.activity.MainActivity }
-[success] Total time: 14 s, completed 14.09.2015 0:09:33
->
+[success] Total time: 8 s, completed 14.09.2015 13:54:17
+> devices
+[info]  Serial                 Model            Battery % Android Version
+[info]  ---------------------- ---------------- --------- ---------------
+[info]  192.168.56.101:5555    Google Nexus 4 - 5.0.0 - API 21 - 768x1280      100% 5.0    API 21
+> 
