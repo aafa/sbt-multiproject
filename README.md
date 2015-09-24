@@ -1,19 +1,7 @@
 
-### Showcase project for https://github.com/pfn/android-sdk-plugin/issues/205
-See [logs](logs)
+##### Showcase project 
 
-### Predex files collision in a multiproject setup
-
+To test https://github.com/pfn/android-sdk-plugin/ + protify
 
 
-Steps to reproduce
 
-1. First `run` to create proguard cache
-2. Second `run` to create predex cache 
-3. Change something in [project library](core/src/main/scala/com/test/core/activity/CoreMainActivity.scala)
-4. Hitting `run` once more will get you exception
-
-`java.lang.IllegalArgumentException: Source predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex and destination predex-libraries/classes-fea1db6a2e85fdeda8f2073688c847728e688fa4.jar/classes.dex must be different` 
-
-
-See full [console.log](console.log) for details
