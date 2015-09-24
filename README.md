@@ -1,5 +1,8 @@
 
-## Predex files collision in a multiproject setup
+### Showcase project for https://github.com/pfn/android-sdk-plugin/issues/205
+See [logs](logs)
+
+### Predex files collision in a multiproject setup
 
 
 
