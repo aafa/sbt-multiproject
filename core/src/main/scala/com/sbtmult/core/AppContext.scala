@@ -25,7 +25,6 @@ class AppContext extends MultiDexApplication {
     super.onCreate()
     AppContext.instance = this
     AppSettings.setup(this.getApplicationContext)
-    com.hanhuy.android.protify.agent.Protify.install(this)
   }
 
   override def onLowMemory() {

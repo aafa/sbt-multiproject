@@ -17,7 +17,6 @@ object Dependencies {
     resolvers ++= resolverUrls,
 
     libraryDependencies += aar("com.android.support" % "multidex" % "1.0.1"),
-    libraryDependencies += "com.hanhuy.android" % "protify-agent" % "0.6",
     libraryDependencies += "org.scaloid" %% "scaloid" % "3.6.1-10"
   )
 

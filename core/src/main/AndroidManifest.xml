@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.sbtmult.core">
+<manifest package="com.sbtmult.core" xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <application
-            android:allowBackup="true"
-            android:name="com.sbtmult.core.AppContext">
-        <activity
-                android:name="com.sbtmult.core.activity.CoreMainActivity"
-                android:label="Core">
+    <application android:name="com.hanhuy.android.protify.agent.ProtifyApplication" android:allowBackup="true">
+        <activity android:name="com.sbtmult.core.activity.CoreMainActivity" android:label="Core">
         </activity>
 
-    </application>
+    <activity android:name="com.hanhuy.android.protify.agent.internal.ProtifyActivity" android:exported="false" android:theme="@style/InternalProtifyDialogTheme"/><receiver android:name="com.hanhuy.android.protify.agent.internal.ProtifyReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:exported="true"><intent-filter><action android:name="com.hanhuy.android.protify.action.PROTIFY"/><action android:name="com.hanhuy.android.protify.action.CLEAN"/><action android:name="com.hanhuy.android.protify.action.INSTALL"/></intent-filter></receiver><activity android:theme="@style/InternalProtifyDialogTheme" android:exported="false" android:name="com.hanhuy.android.protify.agent.internal.ProtifyActivity"/><receiver android:exported="true" android:permission="android.permission.INSTALL_PACKAGES" android:name="com.hanhuy.android.protify.agent.internal.ProtifyReceiver"><intent-filter><action android:name="com.hanhuy.android.protify.action.PROTIFY"/><action android:name="com.hanhuy.android.protify.action.CLEAN"/><action android:name="com.hanhuy.android.protify.action.INSTALL"/></intent-filter></receiver></application>
 
 </manifest>

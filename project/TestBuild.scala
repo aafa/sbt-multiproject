@@ -16,7 +16,7 @@ object TestBuild extends Build {
 
   lazy val app: Project = Project(id = "app", base = file("apps/app")) settings (appsSettings: _*) dependsOn core
 
-  lazy val appsSettings = android.Plugin.androidBuild ++ commonSettings ++ protifySettings ++ Seq(
+  lazy val appsSettings = android.Plugin.androidBuild ++ commonSettings ++ Seq(
     localProjects in Android += LibraryProject(core.base),
     transitiveAndroidLibs in Android := false,
 
@@ -24,7 +24,7 @@ object TestBuild extends Build {
     install <<= install in Android,
 
     dexMulti in Android := true,
-//    dexMainFileClasses in Android := Settings.dexFiles,
+    dexMainClasses in Android := Settings.dexFiles,
 
     useProguard in Android := proguard,
     proguardScala in Android := proguard,
@@ -34,8 +34,8 @@ object TestBuild extends Build {
     proguardOptions in Android ++= Settings.proguardCommons,
 
     dexMaxHeap in Android := "4G",
-    apkbuildExcludes in Android ++= Settings.apkExcludeStrings
-  )
+    packagingOptions in Android := PackagingOptions(excludes = Settings.apkExcludeStrings)
+  ) ++ protifySettings
 
   private val proguard: Boolean = true
 
